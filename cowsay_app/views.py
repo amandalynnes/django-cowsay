@@ -6,6 +6,7 @@ import subprocess
 # Create your views here.
 
 # Cesar Ramos helped me get my cow to show up. I was close but needed to tweak some things.
+# Figured out was able to make the sorby work in study hall
 
 
 def index_view(request):
