@@ -20,7 +20,6 @@ def index_view(request):
                 text=data['text'],
             )
             cow_say = subprocess.run(['cowsay', data['text']], capture_output=True)
-            print(cow_say.stdout.decode('utf-8'))
             cow = cow_say.stdout.decode('utf-8')
             form = AddTextForm()
             return render(request, "index.html", {
